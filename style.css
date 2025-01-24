@@ -1,21 +1,20 @@
-#container{
-    display:grid;
+#container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
-    ". a ."
-    "b c c";
-}
-#a {
-    grid-area:a;
+        ". a ."
+        "b c c";
 }
 
+#a {
+    grid-area: a;
+}
 
 #b {
-    grid-area:b;
+    grid-area: b;
 }
 
-
 #c {
-    grid-area:c;
+    grid-area: c;
 }

@@ -1,14 +1,21 @@
 #container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: 
         ". a ."
-        "b c c";
+        "b c c"
+        ". canvas ."
+        ". . d ";
+       
+    gap: 10px;
 }
 
 #a {
     grid-area: a;
+    align-self: center;
+    justify-self: center;
+    padding: 2px; /* Add padding around the div */
 }
 
 #b {
@@ -17,4 +24,18 @@
 
 #c {
     grid-area: c;
+}
+
+#d {
+    grid-area: d;
+    text-align: center;
+}
+
+#canvas-container {
+    grid-area: canvas;
+    justify-self: center;
+    align-self: center;
+}
+.layout{
+    border: 4px solid black;
 }

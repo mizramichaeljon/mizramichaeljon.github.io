@@ -2,15 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/p5.min.js"></script>
     </head>
     <body>
-        <div id="container">
-            <div id="a">
-                <h1>MyWebsite</h1>
+        <div id="container" class="layout">
+            <div id="a" class="layout">
+                <h1 style="margin: 10px">MyWebsite</h1>
             </div>
-            <div id="b"></div>
-            <div id="c"></div>
+            <div id="b" class="layout">
+                <p>some content</p>
+            </div>
+            <div id="c" class="layout">
+                <p>more content</p>
+            </div>
+            <div id="d" class="layout">
+                <p>plus content</p>
+            </div>
+            <div id="canvas-container"></div>
         </div>
-        
+        <script src="main.js"></script>
     </body>
 </html>
